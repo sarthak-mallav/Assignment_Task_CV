@@ -1,0 +1,101 @@
+/* Apply styles to the entire form container */
+div {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  margin-top: 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+/* Add some spacing between the radio buttons */
+input[type="radio"] + label {
+  margin-left: 10px;
+}
+
+/* Style the form label for radio buttons and checkboxes */
+label > label {
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+/* Add some margin to the suggestion input field */
+input[type="text"] {
+  margin-top: 10px;
+}
+
+/* Add a bit of spacing around the form */
+div > div {
+  margin-bottom: 20px;
+}
+
+/* Style the "Reset" button */
+button[type="reset"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Style the form submission success message */
+.alert {
+  color: green;
+  margin-top: 10px;
+}

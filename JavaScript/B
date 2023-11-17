@@ -1,0 +1,7 @@
+function descendingSort(arr) {
+    arr.sort((a, b) => b - a);
+}
+
+const arr = [9,8,2,8,6,1];
+descendingSort(arr);
+console.log(arr);

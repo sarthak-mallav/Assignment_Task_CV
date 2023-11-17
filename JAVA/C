@@ -1,0 +1,30 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a Roman Numeral: ");
+        String input = scanner.nextLine();
+        boolean isPangram = isPangram(input);
+        
+        if (isPangram) {
+            System.out.println("The input is a pangram.");
+        } else {
+            System.out.println("The input is not a pangram.");
+        }
+    }
+
+    public static boolean isPangram(String str) {
+        Set<Character> alphabet = new HashSet<>();
+        
+        for (char ch : str.toCharArray()) {
+            if (Character.isLetter(ch)) {
+                alphabet.add(Character.toLowerCase(ch));
+            }
+        }
+
+        return alphabet.size() == 26;
+    }
+}
